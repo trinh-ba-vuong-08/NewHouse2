@@ -1,0 +1,54 @@
+/* tablet va mobile */
+@media (max-width: 1023px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+}
+/* table*/
+@media (min-width:740px) and (max-width:1023px){
+
+}
+/* mobile */
+@media (max-width:739px){
+    #menu-btn{
+        display: inherit;
+    }
+    .header .logo img{
+        height: 60px;
+    }
+    /* .navbar{
+        display: none;
+    } */
+    .header .icons div{
+        margin: 0 10px;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 2rem;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: #fff;
+        border-radius: 5px;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    .header .navbar.active{
+        transform: scaleY(1);
+    }
+    .header .navbar ul{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        
+    }
+    .header .navbar ul li{
+        padding: 1rem 0;
+    }
+}
